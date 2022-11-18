@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_main">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center"
+       android:layout_marginHorizontal="32dp"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="32dp"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+                   <ImageView
+                       android:id="@+id/main_IMG_wifi"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:layout_marginRight="12dp"
+                       android:src="@drawable/ic_cross"></ImageView>
+                   <TextView
+                       android:id="@+id/main_TXT_wifi"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="WIFI"></TextView>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+                   <ImageView
+                       android:id="@+id/main_IMG_bt"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:layout_marginRight="12dp"
+                       android:src="@drawable/ic_cross"></ImageView>
+                   <TextView
+                       android:id="@+id/main_TXT_bt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Bluetooth"/>
+               </LinearLayout>
+
+
+           </LinearLayout>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="32dp"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+                   <ImageView
+                       android:id="@+id/main_IMG_baterry"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:layout_marginRight="12dp"
+                       android:src="@drawable/ic_cross"></ImageView>
+                   <TextView
+                       android:id="@+id/main_TXT_baterry"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Charge" />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+                   <ImageView
+                       android:id="@+id/main_IMG_lockscreen"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:layout_marginRight="12dp"
+                       android:src="@drawable/ic_cross"></ImageView>
+                   <TextView
+                       android:id="@+id/main_TXT_lockscreen"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Lock screen"/>
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="32dp"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="32dp"
+               android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+                   <ImageView
+                       android:id="@+id/main_IMG_orientation"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:layout_marginRight="12dp"
+                       android:src="@drawable/ic_cross"></ImageView>
+                   <TextView
+                       android:id="@+id/main_TXT_orientation"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Orientation"
+
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:gravity="center">
+
+               <EditText
+                   android:id="@+id/main_INPUT_password"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="32dp"
+                   android:gravity="center"
+                   android:hint="Enter password">
+
+               </EditText>
+
+
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/main_BTN_submit"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:backgroundTint="#D3B2C1"
+                   android:text="Next">
+
+               </androidx.appcompat.widget.AppCompatButton>
+           </LinearLayout>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
